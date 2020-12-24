@@ -1,0 +1,79 @@
+$couleur-principale: orange;
+$couleur-secondaire: yellow;
+
+@mixin ring ($size, $color) {
+    width : $size;
+    height: $size;
+    border: solid $size/8 $color;
+    border-radius: 400px;
+    box-shadow: $size/40 $size/40 $size/40 darken($color,20);
+    margin: 5px + $size/120;
+}
+
+body {
+    font-family: 'Bilbo', cursive;
+    font-size: 30px;
+}
+
+nav, footer {
+    background-color: $couleur-principale;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    color: white;
+}
+
+.logo{
+    width: 50%;
+    font-weight: bold;
+    margin-left: 2em;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 2em;
+}
+
+.rings-presentation{
+    font-size: 48px;
+    margin: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ring-part {
+    display: flex;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.orange-ring {
+    @include ring(50px, $couleur-principale);
+}
+
+.yellow-ring {
+    @include ring(150px, $couleur-secondaire);
+}
+
+.ring-last-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grey-rings {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+@for $i from 1 through 6 {
+    .ring-#{$i} {
+        @include ring( 40px + ($i * 10px), dimgrey);
+        margin-left: ($i * -5px)-20px;
+    }
+}

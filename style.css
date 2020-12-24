@@ -1,0 +1,130 @@
+body {
+    font-family: "Bilbo", cursive;
+    font-size: 30px;
+}
+
+nav, footer {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    color: white;
+}
+
+.logo {
+    width: 50%;
+    font-weight: bold;
+    margin-left: 2em;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 2em;
+}
+
+.rings-presentation {
+    font-size: 48px;
+    margin: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ring-part {
+    display: flex;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.orange-ring {
+    width: 50px;
+    height: 50px;
+    border: solid 6.25px orange;
+    border-radius: 400px;
+    box-shadow: 1.25px 1.25px 1.25px #996300;
+    margin: 5.4166666667px;
+}
+
+.yellow-ring {
+    width: 150px;
+    height: 150px;
+    border: solid 18.75px yellow;
+    border-radius: 400px;
+    box-shadow: 3.75px 3.75px 3.75px #999900;
+    margin: 6.25px;
+}
+
+.ring-last-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grey-rings {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.ring-1 {
+    width: 50px;
+    height: 50px;
+    border: solid 6.25px dimgrey;
+    border-radius: 400px;
+    box-shadow: 1.25px 1.25px 1.25px #363636;
+    margin: 5.4166666667px;
+    margin-left: -25px;
+}
+
+.ring-2 {
+    width: 60px;
+    height: 60px;
+    border: solid 7.5px dimgrey;
+    border-radius: 400px;
+    box-shadow: 1.5px 1.5px 1.5px #363636;
+    margin: 5.5px;
+    margin-left: -30px;
+}
+
+.ring-3 {
+    width: 70px;
+    height: 70px;
+    border: solid 8.75px dimgrey;
+    border-radius: 400px;
+    box-shadow: 1.75px 1.75px 1.75px #363636;
+    margin: 5.5833333333px;
+    margin-left: -35px;
+}
+
+.ring-4 {
+    width: 80px;
+    height: 80px;
+    border: solid 10px dimgrey;
+    border-radius: 400px;
+    box-shadow: 2px 2px 2px #363636;
+    margin: 5.6666666667px;
+    margin-left: -40px;
+}
+
+.ring-5 {
+    width: 90px;
+    height: 90px;
+    border: solid 11.25px dimgrey;
+    border-radius: 400px;
+    box-shadow: 2.25px 2.25px 2.25px #363636;
+    margin: 5.75px;
+    margin-left: -45px;
+}
+
+.ring-6 {
+    width: 100px;
+    height: 100px;
+    border: solid 12.5px dimgrey;
+    border-radius: 400px;
+    box-shadow: 2.5px 2.5px 2.5px #363636;
+    margin: 5.8333333333px;
+    margin-left: -50px;
+}
